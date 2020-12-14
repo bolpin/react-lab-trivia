@@ -5,5 +5,12 @@
     "answer2": "Garfield",
     "answer3": "Pluto",
     "answer4": "Hobbes"
+  },
+  {
+    "question": "Where in the World is Carmen Sandiego?",
+    "answer1": "San Diego",
+    "answer2": "Rome",
+    "answer3": "Pluto",
+    "answer4": "Hollywood"
   }
 ]

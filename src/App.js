@@ -5,8 +5,8 @@ import Answer from './Answer';
 import Distractor from './Distractor';
 // testing!
 
-function shuffle(array) {
-  let _array = [...array];
+function shuffle(question) {
+  let _array = [...question.incorrect_answers, question.correct_answer];
   var currentIndex = _array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
@@ -31,37 +31,28 @@ function shuffle(array) {
 // console.log(arr);
 
 
-
 const App = () => {
-  const onSubmitHandler = () => {
-    const correctAnswer = questions[0].answers.slice(-1);
-    
+  const onSubmitHandler = (selected) => {
+    const correctAnswer = questions[0].correct_answer;
   }
-  
+
   return (
     <>
       <form>
         {questions[0].question}
         <ul>
-          {shuffle(questions[0].answers).map((answer) => {
+          {shuffle(questions[0]).map((answer) => {
             return (
-              <li>
-                <input type="radio" key={answer} value={answer}/>
-                <label>{answer}</label>
+              <li key={answer}>
+                <button onClick={onSubmitHandler}>
+                  {answer}
+                </button>
               </li>
-            )
-          })}
+          )})}
         </ul>
-
-        <button onClick={onSubmitHandler}>
-          Submit answer
-        </button>
       </form>
     </>
   );
 }
 
 export default App;
-
-
-

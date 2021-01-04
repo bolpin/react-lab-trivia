@@ -1,6 +1,122 @@
 [
   {
-    "question": "what is the name of Charles Schultz cartoon dog?????????????????",
-    "answers": ["Garfield", "Pluto", "Hobbes", "Snoopy"]
+    "category": "Entertainment: Cartoon & Animations",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the TV show &quot;Rick and Morty&quot;, Rick uses the catchphrase &quot;Wubba Lubba Dub Dub&quot;, which means what in Birdperson?",
+    "correct_answer": "I am in great pain, please help me.",
+    "incorrect_answers": [
+      "I pray that my life ends soon.",
+      "Lets get this party started!",
+      "I am suffering, please help me."
+    ]
+  },
+  {
+    "category": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the &quot;Harry Potter&quot; series, what is Headmaster Dumbledore&#039;s full name?",
+    "correct_answer": "Albus Percival Wulfric Brian Dumbledore",
+    "incorrect_answers": [
+      "Albus Valum Jetta Mobius Dumbledore",
+      "Albus James Lunae Otto Dumbledore",
+      "Albus Valencium Horatio Kul Dumbledore"
+    ]
+  },
+  {
+    "category": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the following Autobot names in Michael Bay&#039;s movies was NOT a name for a Transformer in the original 1980&#039;s cartoon?",
+    "correct_answer": "Mudflap",
+    "incorrect_answers": [
+      "Skids",
+      "Sideswipe",
+      "Ratchet"
+    ]
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the largest lake in the African continent?",
+    "correct_answer": "Lake Victoria",
+    "incorrect_answers": [
+      "Lake Tanganyika",
+      "Lake Malawi",
+      "Lake Turkana"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the correct phrase for the Latin saying &quot;Romanes Eunt Domus&quot; in Monty Python&#039;s Life of Brian?",
+    "correct_answer": "Romani Ite Domum",
+    "incorrect_answers": [
+      "Romans Go Home",
+      "Roxani Ite Domum",
+      "Tomate Ite Domum"
+    ]
+  },
+  {
+    "category": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the year 1818, novelist Mary Shelly is credited with writing a fiction novel and creating this infamous character.",
+    "correct_answer": "Frankenstein&#039;s monster",
+    "incorrect_answers": [
+      "Dracula",
+      "The Thing",
+      "The Invisible Man"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the game Call of Duty, what is the last level where you play as an American soldier?",
+    "correct_answer": "Festung Recogne",
+    "incorrect_answers": [
+      "Ste. Mere-Eglise (Day)",
+      "Chateau",
+      "Brecourt"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is known as &quot;the brain&quot; of the Computer?",
+    "correct_answer": "Central Processing Unit",
+    "incorrect_answers": [
+      "Motherboard",
+      "Graphics Processing Unit",
+      "Keyboard"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the &quot;Ace Attorney&quot; series, who was the truly responsible of the forging of the autopsy report of the pivotal IS-7 incident?",
+    "correct_answer": "Bansai Ichiyanagi",
+    "incorrect_answers": [
+      "Manfred Von Karma",
+      "Gregory Edgeworth",
+      "Tateyuki Shigaraki"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "If you planted the seeds of Quercus robur, what would grow?",
+    "correct_answer": "Trees",
+    "incorrect_answers": [
+      "Grains",
+      "Vegetables",
+      "Flowers"
+    ]
   }
 ]

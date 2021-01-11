@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import * as questions from './triviaQuestions.json';
+import Question from './Question';
 import Answer from './Answer';
 import Distractor from './Distractor';
+import { useState } from 'react';
 // testing!
 
 function shuffle(question) {
@@ -32,24 +34,28 @@ function shuffle(question) {
 
 
 const App = () => {
-  const onSubmitHandler = (selected) => {
+  const [score, setScore] = useState(0);
+  const shuffledQuestions = shuffle(questions[0])
+
+  const onSubmitHandler = (ans) => {
     const correctAnswer = questions[0].correct_answer;
+    debugger;
+    if (correctAnswer === ans) {
+      // setScore(score + 1);
+      setScore(prevState => prevState + 1)
+      // increment score
+    }
+
   }
 
   return (
     <>
       <form>
+        <h2>
+          {score}
+        </h2>
         {questions[0].question}
-        <ul>
-          {shuffle(questions[0]).map((answer) => {
-            return (
-              <li key={answer}>
-                <button onClick={onSubmitHandler}>
-                  {answer}
-                </button>
-              </li>
-          )})}
-        </ul>
+        <Question questions={shuffledQuestions} submitHandler={onSubmitHandler} />
       </form>
     </>
   );

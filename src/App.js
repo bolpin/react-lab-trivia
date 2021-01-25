@@ -31,6 +31,7 @@ const App = () => {
   const [step, setStep] = useState(0);
 
   const incorrectHandler = () => setStep(step + 1)
+  
   const correctHandler = () => {
     setScore(score + 1)
     setStep(step + 1)

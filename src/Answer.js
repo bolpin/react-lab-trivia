@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Answer = () => {
+const Answer = ({text, clickHandler}) => {
   return (
-    <input type="radio">
-    </input>
+    <button onClick={clickHandler}>
+      {text}
+    </button>
   )
 }
 

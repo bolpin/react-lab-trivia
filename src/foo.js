@@ -27,44 +27,42 @@ const API_URI = "https://opentdb.com/api.php?amount=10&type=multiple"
 const App = () => {
 
   const [questions, setQuestions] = useState([]);
-  const [score, setScore] = useState(0);
-  const [step, setStep] = useState(0);
-
-  const incorrectHandler = () => setStep(step + 1)
-  const correctHandler = () => {
-    setScore(score + 1)
-    setStep(step + 1)
-  }
+  const [score, setScore] = useState([]);
+  const [step, setStep] = useState([]);
 
   useEffect(() => {
     fetch(API_URI)
     .then(response => response.json())
-    .then(data => {
-      return data.results.map( (result) => {
-        return {
-          ...result,
-          question: decodeURI(result.question)
-        }
-      });
-    })
-    .then(questionArray =>
-      setQuestions(questionArray)
+    .then(data =>
+      setQuestions(data.results) 
     )} , []
     )
 
   return ( questions[0] ? (
-    <>
-      <p>
-        Score: {score}/{step}
-      </p>
-      <Question data={questions[step]} correctClick={correctHandler} incorrectClick={incorrectHandler}/>
-    </>
+      <Question data={questions[0]}/>
     ) : "Loading..."
   )
-
 }
 
 export default App;
 
 
 
+
+const Question = ( {data: {question, correct_answer, incorrect_answers}}) => {
+  return (
+      <div> {question} </div>
+  )
+}
+
+export default Question;import React from 'react'
+
+const Answer = ({text, clickHandler}) => {
+  return (
+    <button onClick->
+      {text}
+    </button>
+  )
+}
+
+export default Answer;

@@ -1,6 +1,14 @@
 [
   {
-    "question": "what is the name of Charles Schultz cartoon dog?????????????????",
+    "question": "what is the name of Charles Schultz's cartoon dog?????????????????",
     "answers": ["Garfield", "Pluto", "Hobbes", "Snoopy"]
+  },
+  {
+    "question": "What is the name of Snoopy's bird friend?",
+    "answers": ["Garfield", "Pluto", "Hobbes", "Woodstock"]
+  },
+  {
+    "question": "Who is Schroder's favorite coposer?",
+    "answers": ["Prince", "Brahms", "Duke Ellington", "Ludwig von Beethoven"]
   }
 ]
